@@ -829,13 +829,38 @@ body {
   color: #212121;
 }
 
+.modal-field {
+  margin-bottom: 10px;
+}
+
 .modal-input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 10px;
-  padding-left: 12px;
+  padding-left: 42px;
+  outline: none;
+  transition: border-color 250ms;
+}
+
+.modal-input:focus {
+  border-color: #2196f3;
+}
+
+.modal-input:focus + .input-icon {
+  fill: #2196f3;
+}
+
+.modal-input-wrap {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: border-color 250ms;
 }
 
 .modal-mark {
@@ -853,13 +878,86 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+  padding-top: 12px;
+  padding-left: 16px;
+  margin-bottom: 20px;
+  outline: none;
+  transition: border-color 250ms;
 }
 
-.placeholder {
+.modal-text:focus {
+  border: 1px solid #2196f3;
+}
+
+.check-text {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1, 14px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  align-items: center;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.check-text:before {
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 2px solid rgba(33, 33, 33, 1);
+  border-radius: 2px;
+  display: block;
+  margin-right: 7px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.input-check:checked + .check-text:before {
+  background-color: #2196f3;
+  border: none;
+  background-image: url(../images/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 250ms;
+}
+
+.input-check:focus + .check-text:before {
+  border-color: #2196f3;
+}
+
+.text-policy {
+  text-decoration-line: underline;
+  color: #2196f3;
+}
+
+.button-send {
+  width: 200px;
+  height: 50px;
+  background-color: #2196f3;
+}
+
+.button-text {
+  width: 89px;
+  height: 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
 }

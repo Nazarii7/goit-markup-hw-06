@@ -433,17 +433,78 @@
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form>
-          <label class="modal-mark" for="user-name">Имя</label>
-          <input type="text" class="modal-input" name="user-name">
-          <label class="modal-mark" for="user-email">Почта</label>
-          <input type="email" class="modal-input" name="user-email">
-          <label class="modal-mark" for="user-tel">Телефон</label>
-          <input type="tel" class="modal-input" name="user-tel">
-          <div class="field-modal">
-            <label class="modal-mark" for="user-text">Комментарий</label>
-            <textarea name="user-text" id="user-text" placeholder="Ведити текст" class="modal-text" ></textarea>
+          <div class="modal-field">
+            <label 
+              class="modal-mark" 
+              for="user-name">Имя
+            </label>
+          <div class="modal-input-wrap">
+            <input 
+              type="text" 
+              class="modal-input" 
+              name="user-name">
+          <svg class="input-icon" width="18" heigt="18">
+            <use href="./images/icons4.svg#icon-person-black"></use>
+          </svg>
           </div>
-          <button type="submit">Отправить</button>
+        </div>
+      <div class="modal-field">
+        <label 
+          class="modal-mark" 
+          for="user-email">Почта
+        </label>
+          <div class="modal-input-wrap">
+            <input 
+              type="email" 
+              class="modal-input" 
+              name="user-email">
+          <svg class="input-icon" width="18" heigt="18">
+            <use href="./images/icons4.svg#icon-email-black"></use>
+          </svg>
+          </div>
+        </div>
+      <div class="modal-field">
+        <label 
+          class="modal-mark" 
+          for="user-tel">Телефон
+        </label>
+          <div class="modal-input-wrap">
+            <input 
+              type="tel" 
+              class="modal-input" 
+              name="user-tel">
+          <svg class="input-icon" width="18" heigt="18">
+            <use href="./images/icons4.svg#icon-phone-black"></use>
+          </svg>
+          </div>
+        </div>
+          <div class="field-modal">
+            <label 
+              class="modal-mark" 
+              for="user-text">Комментарий
+            </label>
+            <textarea 
+              name="user-text" 
+              id="user-text" 
+              placeholder="Ведити текст" 
+              class="modal-text" ></textarea>
+          </div>
+          <div class="field-modal">
+            <input 
+              type="checkbox" 
+              class="input-check visually-hidden" 
+              id="input-check" 
+              name="policy"
+              value="policy">
+            <label 
+              for="input-check"
+              class="check-text"> Соглашаюсь с рассылкой и принимаю <a href="" class="text-policy">Условия договора
+              </a> 
+            </label>
+          </div>
+          <div class="button-send">
+            <button type="submit" class="button-text">Отправить</button>
+          </div>
         </form>
       </div>
     </div>
