@@ -127,6 +127,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--header-color-nav);
   transition: 250ms linear;
+  cursor: pointer;
 }
 
 .header-link:hover,
@@ -142,6 +143,7 @@ body {
   margin-right: 10px;
   fill: #757575;
   transition: 250ms linear;
+  cursor: pointer;
 }
 
 .header-mailto:hover .header-soc-icon {
@@ -227,6 +229,7 @@ body {
   background-color: var(--hero-color-bgh);
   border-radius: 4px;
   border-width: 0;
+  cursor: pointer;
 }
 
 /**********ABout******/
@@ -322,7 +325,8 @@ body {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -414,6 +418,7 @@ body {
   justify-content: center;
   align-items: center;
   transition: 250ms linear;
+  cursor: pointer;
 }
 
 .team-soc-icon {
@@ -476,6 +481,7 @@ body {
   align-items: center;
   margin: 0;
   transition: 300ms linear;
+  cursor: pointer;
 }
 
 .clients-soc-icon {
@@ -632,9 +638,9 @@ body {
 
 .signature-field {
   position: absolute;
-  top: -88px;
+  top: -94px;
   right: 10px;
-  margin-right: 93px;
+  margin-left: 93px;
 }
 
 .signature-input {
@@ -647,6 +653,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  color: #ffffff;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -654,7 +661,7 @@ body {
 
 .signature-text {
   position: absolute;
-  top: -33px;
+  top: -25px;
   left: -573px;
   font-style: normal;
   font-weight: 700;
@@ -683,6 +690,7 @@ body {
   color: #ffffff;
   border-radius: 4px;
   border: 2px solid #2196f3;
+  cursor: pointer;
 }
 
 .mark-send {
@@ -740,6 +748,7 @@ body {
   padding-right: 22px;
   padding-left: 22px;
   transition: 250ms linear;
+  cursor: pointer;
 }
 
 .offer-btn:hover,
@@ -757,6 +766,7 @@ body {
   padding: 0;
   margin: 0px 0px;
   transition: 250ms linear;
+  cursor: pointer;
 }
 
 .offers-item {
@@ -877,7 +887,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 250ms;
+  transition: 400ms;
+  cursor: pointer;
 }
 
 .button-close:hover .icon-close {
@@ -916,8 +927,10 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
+  margin-top: 4px;
   outline: none;
   transition: border-color 250ms;
+  cursor: pointer;
 }
 
 .modal-input:focus {
@@ -950,6 +963,12 @@ body {
 }
 
 .modal-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -957,9 +976,11 @@ body {
   resize: none;
   padding-top: 12px;
   padding-left: 16px;
+  margin-top: 4px;
   margin-bottom: 20px;
   outline: none;
   transition: border-color 250ms;
+  cursor: pointer;
 }
 
 .modal-text:focus {
@@ -976,6 +997,7 @@ body {
   align-items: center;
   display: flex;
   margin-bottom: 30px;
+  margin-left: 10px;
 }
 
 .check-text:before {
@@ -1017,6 +1039,7 @@ body {
 .text-policy {
   text-decoration-line: underline;
   color: #2196f3;
+  margin-left: 4px;
 }
 
 .button-send {
@@ -1041,6 +1064,7 @@ body {
   border-radius: 4px;
   border-width: 0;
   transition: 250ms;
+  cursor: pointer;
 }
 
 .button-text:hover {
