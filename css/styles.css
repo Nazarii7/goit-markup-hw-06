@@ -626,6 +626,73 @@ body {
   fill: var(--fooret-color-words);
 }
 
+.signature {
+  position: relative;
+}
+
+.signature-field {
+  position: absolute;
+  top: -88px;
+  right: 21px;
+}
+
+.signature-input {
+  position: absolute;
+  top: 3px;
+  left: -577px;
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+}
+
+.signature-text {
+  position: absolute;
+  top: -33px;
+  left: -573px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.button-send {
+  position: absolute;
+  top: 3px;
+  right: 7px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding-left: 29px;
+  padding-right: 62px;
+  margin-left: 12px;
+  color: #ffffff;
+  border-radius: 4px;
+  border: 2px solid #2196f3;
+}
+
+.mark-send {
+  position: absolute;
+  top: -59px;
+  right: 34px;
+  margin-top: 13px;
+  margin-left: 10px;
+  fill: #ffffff;
+}
+
 /******PORTFOLIO*******/
 
 .offer-title {
@@ -805,10 +872,19 @@ body {
   height: 30px;
   border-radius: 50%;
   background-color: transparent;
-  border: 1px solid #757575;
+  border: 1px solid #afb1b8;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 250ms;
+}
+
+.button-close:hover .icon-close {
+  fill: #2196f3;
+}
+
+.button-close:focus .icon-close {
+  fill: #2196f3;
 }
 
 .is-hidden {
@@ -949,15 +1025,27 @@ body {
 }
 
 .button-text {
-  width: 89px;
-  height: 30px;
-  font-style: normal;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 200px;
+  height: 50px;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  line-height: 1.87;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--hero-color-btn);
+  background-color: var(--hero-color-bgh);
+  border-radius: 4px;
+  border-width: 0;
+  transition: 250ms;
+}
+
+.button-text:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.button-text:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
